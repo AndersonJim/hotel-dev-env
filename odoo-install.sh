@@ -5,7 +5,7 @@ echo y |  apt install git python3-pip build-essential wget python3-dev python3-v
 echo y |  apt-get install python-psycopg2
 apt-get -y install libpq-dev wget nano
 
-git clone https://www.github.com/odoo/odoo --depth 1 --branch 13.0 --single-branch
+git clone https://www.github.com/odoo/odoo --depth 1 --branch ${ODOO_VERSION} --single-branch
 cd /odoo
 pip3 install -r requirements.txt
 cd /
